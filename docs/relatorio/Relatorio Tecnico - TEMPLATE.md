@@ -5,17 +5,19 @@
 
 `CURSO` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Ciência da Computação
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
+>André Luiz Baptista Esteves Bassini
 >
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+>André Mateus Fonseca Neves
+>
+>Antônio Victor Oliveira Gonçalves
+>
+>Diego Ruas Toledo
+>
+>Henrique de Almeida Diniz
 
 # Estrutura do Documento
 
@@ -56,7 +58,7 @@
 
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
+>Identificamos que existe grande maioria de idosos possuem dificuldades ou resistências, ao usar tecnologias que não são habituados. Como a utilização de eletrodomesticos   E por isso nos empenhamos para tentar solucionar ou amenizar o problema.
 
 > Nesse momento você deve apresentar o problema que a sua aplicação deve
 > resolver. No entanto, não é a hora de comentar sobre a aplicação.
