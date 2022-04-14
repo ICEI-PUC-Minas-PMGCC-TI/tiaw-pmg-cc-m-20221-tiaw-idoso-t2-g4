@@ -83,7 +83,7 @@ Henrique de Almeida Diniz
 
 ## Personas e Mapas de Empatia
 
-[Persona Cleusa](imaages/../images/Persona Cleusa.jpg)
+![Persona Cleusa](imaages/../images/persona_cleusa.png)
 
 
 
