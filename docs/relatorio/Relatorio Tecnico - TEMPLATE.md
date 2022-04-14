@@ -83,8 +83,8 @@ Henrique de Almeida Diniz
 
 ## Personas e Mapas de Empatia
 
-![Persona Cleusa](imaages/../images/persona Cleusa.png)
-......  COLOQUE AQUI O SEU TEXTO ......
+[Persona Cleusa](imaages/../images/Persona Cleusa.jpg)
+
 
 
 > Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que 
