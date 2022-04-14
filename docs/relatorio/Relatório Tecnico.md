@@ -77,38 +77,22 @@ Henrique de Almeida Diniz
 
   O projeto será uma aplicação Web, desenvolvida em HTML utilizando ferramentas como o bootstrap.
 
-> Apresente uma visão geral do que será abordado nesta parte do
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
-
 ## Personas e Mapas de Empatia
 
+  As personas foram desenvolvidas de acordo com as entrevistas e todas as possibilidades de como o usuario final seria. Foram desenvolvidas 4 personas onde todas elas representa um perfil de usuario que ira utilizar: A Cleusa, o José, o Mauro e a Aparecida, sendo todos idosos. A Cleusa e a Aparecida, por terem muito em comum iremos falar sobre ela em par, assim como o José e o Mauro.
+  A Cleusa e a Aparecida ambas senhoras que não necessitam frequentemente da tecnologia diariamente, temos que utilizar maneiras que façam o incentivo espontaneo do software que iremos fazer a aplicação exemplificada e de maneira que o usuario se prenda durante a utilização da aplicação, exemplo ampliando o escopo da aprendizagem de acordo com o desenvolver do software.
+  Abaixo temos os persona da Cleusa e da Aparecida:
+  
 ![Persona Cleusa](imaages/../images/persona_cleusa.png)
 
+![Persona Aparecida](imaages/../images/persona_aparecida.png)
 
 
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que 
-> você deve ser enumerar e descrever precisamente e de forma
-> personalizada todos os principais envolvidos com a solução almeja. 
-> 
-> Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina
-> e/ou nos seguintes links:
->
-> **Links Úteis**:
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Como fazer um mapa de empatia - Vídeo](https://www.youtube.com/watch?v=JlKHGpVoA2Y)
-> 
-> 
-> **Exemplo de Persona**
-> 
-> ![Exemplo de Persona](imaages/../images/persona.png)
-> 
-> Fonte: [Como criar uma persona para o seu negócio](https://raissaviegas.com.br/como-criar-uma-persona/)
+  Agora neste momento vamos abordar o caso de José e Mauro, ambos com a vontade de aprender em comum, mesmo sem a necessidade direta, mostrando interesse pelo aprendizado, fazendo assim o melhor caso para a utilização do software que está sendo desenvolvido. Abaixo temos os personas completos do José e o Mauro: 
 
+![Persona José Carlos](imaages/../images/persona_jose.png) 
+
+![Persona Mauro](imaages/../images/persona_mauro.png)
 
 ## Histórias de Usuários
 
