@@ -4,15 +4,16 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 
 ## Alunos integrantes da equipe
 
-* André Mateus Fonseca Neves
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* André Luiz Baptista Esteves Bassini
+* André Mateus Fonseca Neves  
+* Antônio Victor Oliveira Gonçalves
+* Diego Ruas Toledo
+* Henrique de Almeida Diniz
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Fernanda Farinelli
+* João Carlos Oliveira Caetano
 
 ## Instruções de utilização
 
