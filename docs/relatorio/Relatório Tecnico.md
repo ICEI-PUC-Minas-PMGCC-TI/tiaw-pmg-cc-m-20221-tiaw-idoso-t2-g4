@@ -83,16 +83,16 @@ Henrique de Almeida Diniz
   A Cleusa e a Aparecida ambas senhoras que não necessitam frequentemente da tecnologia diariamente, temos que utilizar maneiras que façam o incentivo espontaneo do software que iremos fazer a aplicação exemplificada e de maneira que o usuario se prenda durante a utilização da aplicação, exemplo ampliando o escopo da aprendizagem de acordo com o desenvolver do software.
   Abaixo temos os persona da Cleusa e da Aparecida:
   
-![Persona Cleusa](imaages/../images/persona_cleusa.png)
+![Persona Cleusa](imaages/../images/personas/persona_cleusa.png)
 
-![Persona Aparecida](imaages/../images/persona_aparecida.png)
+![Persona Aparecida](imaages/../images/personas/persona_aparecida.png)
 
 
   Agora neste momento vamos abordar o caso de José e Mauro, ambos com a vontade de aprender em comum, mesmo sem a necessidade direta, mostrando interesse pelo aprendizado, fazendo assim o melhor caso para a utilização do software que está sendo desenvolvido. Abaixo temos os personas completos do José e o Mauro: 
 
-![Persona José Carlos](imaages/../images/persona_jose.png) 
+![Persona José Carlos](imaages/../images/personas/persona_jose.png) 
 
-![Persona Mauro](imaages/../images/persona_mauro.png)
+![Persona Mauro](imaages/../images/personas/persona_mauro.png)
 
 ## Histórias de Usuários
 
@@ -100,19 +100,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+| Cleusa  | Assistir tutoriais           | Para meu aprendizado               |
+|Aparecida       | Gostaria de fazer conversar sobre o tema                | Tirar minhas duvidas entre outros usuários |
+|José Carlos       | Gostaria de fazer a utilização em plataforma móvel               | Para fazer a utilização do site fora do computador |
+|  Moderador   | Fazer alterações rapidas e praticas nas postagens do site                | Simplificação a manutenção constante do mesmo |
 
-> Apresente aqui as histórias de usuário que são relevantes para o
-> projeto de sua solução. As Histórias de Usuário consistem em uma
-> ferramenta poderosa para a compreensão e elicitação dos requisitos
-> funcionais e não funcionais da sua aplicação. Se possível, agrupe as
-> histórias de usuário por contexto, para facilitar consultas
-> recorrentes à essa parte do documento.
->
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
 
 ## Requisitos
 
@@ -122,37 +114,24 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir que o usuário cadastre sugestões de tópicos | ALTA | 
+|RF-002| Pode utilizar mecanismo de busca.   | MÉDIA |
+|RF-003|Manter usuário(Cadastrar Novo usuário, alterar usuario, excluir usuario) |BAIXA
+|RF-004|Redirecionar o usuario(ao selecionar em um dos icones de tutorial, o usuario será redirecionado ao tutorial desejado)|MÉDIA
+|RF-005|Ocultar/Mostrar menu(Ao clicar nos tópicos disponíveis na parte superior do site, um menu irá aparecer, para oculta-lo basta clicar em ocultar)|BAIXA
+|RF-006|Aplicar método onde pode fazer exclusão e desativação rapida do comentário para o ser feita pelo moderador |MÉDIA
+|RF-007|Necessário que tenha opção onde o usuário consiga controlar o tamanho da fonte |MÉDIA
+|RF-008|Permitir ao usuário que possa fazer comentários, editar seus comentários, exluir seus comentários e responder qualquer comentário |MÉDIA
 
 
 ### Requisitos não Funcionais
 
+
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-> Com base nas Histórias de Usuário, enumere os requisitos da sua
-> solução. Classifique esses requisitos em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na
->   plataforma (ex: cadastro de usuário).
->
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade,
->   desempenho, confiabilidade, segurança ou outro (ex: suporte a
->   dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma
-> característica alvo da sua solução. Além disso, certifique-se de que
-> todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-> 
-> **Links Úteis**:
-> 
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|RNF-001| O sistema deve ser executável em qualquer plataforma | MÉDIA | 
+|RNF-002| O sistema deverá se comunicar com o banco SQL Server | MÉDIA |
+|RNF-003| O usuário deve estar logado para comentar| BAIXA
 
 
 ## Restrições
@@ -162,7 +141,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| Deve ser desenvolvido em plataforma WEB        |
+|03| O sistema tem que |
 
 
 > Enumere as restrições à sua solução. Lembre-se de que as restrições
@@ -175,7 +155,28 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Projeto de Interface
 
-......  COLOQUE AQUI O SEU TEXTO DE INTRODUÇÃO ......
+ A Interface principal está representada abaixo: 
+ ![Interface](imaages/../images/modelo_home_web.png)
+
+  A interface foi desevolvida com o intuito de ser simples intuitiva, para que o usuário leigo consiga fazer a utilização. 
+  
+  Na parte superior à esquerda possui uma barra de pesquisa onde o usuário consegue procurar tutoriais pelo nome.
+  
+  Ao lado da barra de pesquisa tem o nome da nossa aplicação e o logo. O botão "home" quando clicado entra na pagina inicial.
+   
+  A opção "Tutoriais" na parte superior quando clicado lista os tutorias por ordem alfabética em nova janela.
+  
+  A opção "Sobre a Equipe" abre uma pagina onde mostra nossa equipe e como desenvolvemos nossa aplicação,
+
+  A opção "Contate-nos" abre uma pagina onde é capaz encaminhar mensagens para nossos moderadores.
+
+  Os botões "+T -T" possuem uma funcionalidade onde é possível fazer a troca do tamanho da letra, aumentar ou diminuir.
+
+  E por ultima na parte superior à direita possui o botão de login no qual é clicado redireciona para uma pagina para fazer o login.
+
+  
+  
+ ![Interface](imaages/../images/modelo_home_movel.png)
 
 > Apresente as principais interfaces da solução. Discuta como 
 > foram elaboradas de forma a atender os requisitos funcionais, não
