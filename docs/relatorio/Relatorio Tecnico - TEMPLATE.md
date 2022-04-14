@@ -1,21 +1,23 @@
 # Informações do Projeto
 `TÍTULO DO PROJETO`  
 
-......  COLOQUE AQUI O SEU TEXTO ......
+**VemKFilho**
 
 `CURSO` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+**Ciência da Computação**
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
+André Luiz Baptista Esteves Bassini
 
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+André Mateus Fonseca Neves
+
+Antônio Victor Oliveira Gonçalves
+
+Diego Ruas Toledo
+
+Henrique de Almeida Diniz
 
 # Estrutura do Documento
 
@@ -56,75 +58,24 @@
 
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
->
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+  Identificamos que existe grande maioria de idosos possuem dificuldades ou resistências, ao usar tecnologias que não são habituados. Porque esse grupo de usuarios sofre com isso? E qual seria a maneira funcional onde podemos instruir o idoso para que o medo e a dificuldade se extinguem rapidamente?
 
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
-> 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+  Com a constante evolução da tecnologia, nosso grupo identificou que muitos idosos possuem dificuldade em usar as novas ferramentas que foram desenvolvidas - seja por comodismo, ou por limitações físicas, ou até mesmo pela obstinação em não aprender. Portanto, nós pretendemos criar um site que facilite a interação entre os idodos e as novas funções existentes e que ao mesmo tempo seja atraente e intuitivo para esse público-alvo.
 
 ## Justificativa
-
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
-> 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+  O avanço tecnológico possibilita o desenvolvimento da potencialidade humana em várias dimensões. No entanto, a mesma tecnologia que propicia liberdade, autonomia, integração, também pode excluir. Deixando aquele que não esta presente junto ao crescimento da tecnologia faz ter a vulnerabilidade tecnologica. 
+  A dificuldade em tecnologia está presente em toda faixa etaria da atualidade, mas o idoso por não estar incluido na necessidade desse crescimento tecnologico, tem a constante necessidade de auxilio no processo de aprendendizagem na utilização das plataformas. O problema gerado muita das vezes por não estar necessitando o aprendizado, ou até mesmo no receio de apredizagem por não saber o manejo correto da tecnologia (O famoso "não uso por medo de quebrar").
+  Outro fator necessario levar em questão é sobre as limitações desse usuario para utilização das ferramentas, dificuldade cognitiva e motora. Sendo assim necessario colocar em requisitos maneiras que o usuario consiga fazer interpretação recomendada.
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
+  No primeiro momento do projeto o público-alvo será os idosos que tem dificuldade e/ou interesse no aprendizado para novas tecnologias, conteplando os idosos que não possui conhecimento basico de informatica até conhecimento medio. Projetando de maneira que ate mesmo o usuario com problema cognitivos consiga usufruir da aplicação.
 
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
- 
 # Especificações do Projeto
 
-......  COLOQUE AQUI O SEU TEXTO ......
+  O projeto será uma aplicação Web, desenvolvida em HTML utilizando ferramentas como o bootstrap.
 
 > Apresente uma visão geral do que será abordado nesta parte do
 > documento, enumerando as técnicas e/ou ferramentas utilizadas para
@@ -132,7 +83,8 @@
 
 ## Personas e Mapas de Empatia
 
-......  COLOQUE AQUI O SEU TEXTO ......
+[Persona Cleusa](imaages/../images/Persona Cleusa.jpg)
+
 
 
 > Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que 
