@@ -58,7 +58,7 @@ Henrique de Almeida Diniz
 
 ## Problema
 
-  Identificamos que existe grande maioria de idosos possuem dificuldades ou resistências, ao usar tecnologias que não são habituados. Porque esse grupo de usuarios sofre com isso? E qual seria a maneira funcional onde podemos instruir o idoso para que o medo e a dificuldade se extinguem rapidamente?
+  Identificamos que a grande maioria de idosos possuem dificuldades ou resistências, ao usar tecnologias que não são habituados. Porque esse grupo de usuarios sofre com isso? E qual seria a maneira funcional onde podemos instruir o idoso para que o medo e a dificuldade se extinguem rapidamente?
 
 ## Objetivos
 
