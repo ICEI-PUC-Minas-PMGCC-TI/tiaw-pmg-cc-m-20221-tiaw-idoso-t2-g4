@@ -192,7 +192,8 @@ Versão Mobile:
 
 # Metodologia
 
---
+O grupo adotou uma metodologia de trabalho agil e um pouco individual, onde cada membro selecionou uma uma parte e por meio de reuniões diárias e fora de horário, por meio de plataformas como discord e Whatsapp, fomos desenvolvendo de maneira ágil e eficiente todas as etapas necessárias para levar o projeto a um fim. Utilizamos a ferramenta Invision para desenvolver o Wireframe e User Flow, o Miro para organizarmos nossas ideias e nos mantermos atualizados sobre o que estava sendo feito e que rumo estavamos tomando, houveram tentativas de elevar o trabalho para cirar um protótipo interativo com o uso de Figma ou Marvel App, porém os resultados deixaram a desejar. 
+O projeto finalmente está fluindo em um ritmo acelerado, com imagens do que seria uma solução se tornando um pouco mais clara conforme trabalhamos e desenvolvemos, porém ainda não possuimos confiança em uma ideia sólida de uma maneira de solucionar o problema que foi escolhido pelo grupo. Logo daremos inicio ao processo de tirar o nosso projeto do papel na tentativa de cria-lo de maneira completa ou funcional.
 
 > Nesta parte do documento, você deve apresentar a metodologia 
 > adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, 
