@@ -62,7 +62,7 @@ Henrique de Almeida Diniz
 
 ## Objetivos
 
-  Com a constante evolução da tecnologia, nosso grupo identificou que muitos idosos possuem dificuldade em usar as novas ferramentas que foram desenvolvidas - seja por comodismo, ou por limitações físicas, ou até mesmo pela obstinação em não aprender. Portanto, nós pretendemos criar um site que facilite a interação entre os idodos e as novas funções existentes e que ao mesmo tempo seja atraente e intuitivo para esse público-alvo.
+  Com a constante evolução da tecnologia, nosso grupo identificou que muitos idosos possuem dificuldade em usar as novas ferramentas que foram desenvolvidas - seja por comodismo, ou por limitações físicas, ou até mesmo pela obstinação em não aprender. Portanto, nós pretendemos criar um site que facilite a interação entre os idosos e as novas funções existentes e que ao mesmo tempo seja atraente e intuitivo para esse público-alvo.
 
 ## Justificativa
   O avanço tecnológico possibilita o desenvolvimento da potencialidade humana em várias dimensões. No entanto, a mesma tecnologia que propicia liberdade, autonomia, integração, também pode excluir. Deixando aquele que não esta presente junto ao crescimento da tecnologia faz ter a vulnerabilidade tecnologica. 
