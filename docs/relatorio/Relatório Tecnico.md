@@ -142,7 +142,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Deve ser desenvolvido em plataforma WEB        |
-|03| O sistema tem que |
+|03| O sistema tem que ser compatível com aparelhos antigos|
 
 # Projeto de Interface
 
