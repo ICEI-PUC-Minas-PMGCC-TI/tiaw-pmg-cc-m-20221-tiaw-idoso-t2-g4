@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Tutorial</title>
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/Template vemKfilho.css">
+  <link rel="stylesheet" href="css/cssButton.css">
+</head>
+
+<body onload="init()">
+
+  <div class="tm-page-wrap mx-auto">
+    <div class="position-relative">
+      <div class="potition-absolute tm-site-header">
+        <div class="container-fluid position-relative">
+          <div class="row">
+            <div class="col-7 col-md-4">
+              <a href="index.html" class="tm-bg-black text-center tm-logo-container">
+                <i class="fas fa-video tm-site-logo mb-3"></i>
+                <h1 class="tm-site-name">Tutoriais</h1>
+              </a>
+            </div>
+            <div class="col-5 col-md-8 ml-auto mr-0">
+              <div class="tm-site-nav">
+                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
+                  <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed" type="button"
+                    data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span>
+                      <i class="fas fa-bars tm-menu-closed-icon"></i>
+                      <i class="fas fa-times tm-menu-opened-icon"></i>
+                    </span>
+                  </button>
+                  <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                    <ul class="navbar-nav text-uppercase">
+                      <li class="nav-item active">
+                        <a class="nav-link tm-nav-link" href="video-page.html">Login <span
+                            class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="about.html">Sobre Nós</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="contact.html">Contato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tm-welcome-container tm-fixed-header tm-fixed-header-1">
+        <div class="text-center">
+          <p class="pt-5 px-3 tm-welcome-text tm-welcome-text-2 mb-1 text-white mx-auto">Cadastramento de Tutoriais</p>
+        </div>
+      </div>
+
+      <div id="tm-fixed-header-bg"></div>
+    </div>
+    <h1>Cadastro de Tutoriais</h1>
+    <div class="container">
+      <div class="row">
+        <div id="msg" class="col-sm-10 offset-sm-1 "></div>
+      </div>
+
+      <form id="form-usuario">
+        <div class="form-group row">
+          <div class="col-sm-3">
+            <label for="inputId">Id</label>
+            <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
+          </div>
+
+          <div class="col-sm-5">
+            <label for="inputNome">Nome (*)</label>
+            <input type="text" class="form-control" id="inputNome" required placeholder="Informe o nome de Usuário">
+          </div>
+
+          <div class="col-sm-4">
+            <label for="inputCategoria">Categoria do Usuário</label>
+            <select name="inputCategoria" id="inputCategoria" class="form-control">
+              <option value="">Selecione Categoria</option>
+              <option value="Usuário">Usuário</option>
+              <option value="Moderador">Moderador</option>
+              <option value="Administrador">Administrador</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-5">
+            <label for="inputEmail">E-mail (*)</label>
+            <input type="email" class="form-control" id="inputEmail" required placeholder="Informe o e-mail">
+          </div>
+          <div class="col-sm-4">
+            <label for="inputLogin">Login do Usuario</label>
+            <input type="text" class="form-control" id="inputLogin" required placeholder="Informe a Login do usuário">
+          </div>
+
+          <div class="col-sm-3">
+            <label for="inputSenha">Senha do Usuário</label>
+            <input type="password" class="form-control" id="inputSenha" required
+              placeholder="Informe a senha do usuário">
+
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4">
+            <small>(*) Campos obrigatórios</small>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
+            <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
+            <input type="button" class="btn btn-danger" id="btnDelete" value="Excluir">
+            <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar">
+          </div>
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <table id="grid-usuarios" class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Categoria do Usuário</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Login</th>
+                <th scope="col">Senha</th>
+              </tr>
+            </thead>
+            <tbody id="table-usuario">
+              <tr>
+                <td scope="row">1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <footer class="row pt-5">
+          <div class="col-12">
+            <p class="text-right">Copyright 2022 VemKfilho</p>
+          </div>
+        </footer>
+
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/login.js"></script>
+      <script>
+        function exibeUsuario() {
+          // Remove todas as linhas do corpo da tabela
+          $("#table-usuario").html("");
+
+          // Popula a tabela com os registros do banco de dados
+          for (i = 0; i < db.usuarios.length; i++) {
+            let usuario = db.usuarios[i];
+            $("#table-usuario").append(`<tr><td scope="row">${usuario.id}</td>
+                                                <td>${usuario.nome}</td>
+                                                <td>${usuario.categoria}</td>
+                                                <td>${usuario.email}</td>
+<td>${usuario.login}</td>
+                                                <td>${usuario.senha}</td>  
+                                            </tr>`);
+          }
+        }
+
+        function init() {
+          // Adiciona funções para tratar os eventos 
+          $("#btnInsert").click(function () {
+            // Verfica se o formulário está preenchido corretamente
+            if (!$("#form-usuario")[0].checkValidity()) {
+              displayMessage("Preencha o formulário corretamente.");
+              return;
+            }
+            // Obtem os valores dos campos do formulário
+            let campoNome = $("#inputNome").val();
+            let campoCategoria = $('#inputCategoria').val();
+            let campoEmail = $('#inputEmail').val();
+            let campoSenha = $('#inputSenha').val();
+            let usuario = {
+              nome: campoNome,
+              categoria: campoCategoria,
+              email: campoEmail,
+              senha: campoSenha,
+            };
+
+            insertUsuario(usuario);
+
+            // Reexibe os usuarios
+            exibeUsuario();
+
+            // Limpa o formulario
+            $("#form-usuario")[0].reset();
+          });
+
+          // Intercepta o click do botão Alterar
+          $("#btnUpdate").click(function () {
+            // Obtem os valores dos campos do formulário
+            let campoId = $("#inputId").val();
+            if (campoId == "") {
+              displayMessage("Selecione um usuario para ser alterado.");
+              return;
+            }
+            let campoNome = $("#inputNome").val();
+            let campoLogin = $("#inputLogin").val();
+            let campoEmail = $('#inputEmail').val();
+            let campoSenha = $('#inputSenha').val();
+
+            addUser(campoNome, campoLogin, campoSenha, campoEmail);
+
+            // Reexibe os Usuarios
+            exibeUsuario();
+
+            // Limpa o formulario
+            $("#form-usuario")[0].reset();
+          });
+
+          // Intercepta o click do botão Excluir
+          $("#btnDelete").click(function () {
+            let campoId = $("#inputId").val();
+            if (campoId == "") {
+              displayMessage("Selecione um Usuario a ser excluído.");
+              return;
+            }
+            deleteUsuario(parseInt(campoId));
+
+            // Reexibe os usuarios
+            exibeUsuario();
+
+            // Limpa o formulario
+            $("#form-usuario")[0].reset();
+          });
+
+          // Intercepta o click do botão Listar Usuarios
+          $("#btnClear").click(function () {
+            $("#form-usuario")[0].reset();
+          });
+
+          // Oculta a mensagem de aviso após alguns segundos
+          $('#msg').bind("DOMSubtreeModified", function () {
+            window.setTimeout(function () {
+              $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                $(this).remove();
+              });
+            }, 5000);
+          });
+
+          // Preenche o formulário quando o usuario clicar em uma linha da tabela 
+          $("#grid-usuarios").on("click", "tr", function (e) {
+            let linhaUsuario = this;
+            colunas = linhaUsuario.querySelectorAll("td");
+
+            $("#inputId").val(colunas[0].innerText);
+            $("#inputNome").val(colunas[1].innerText);
+            $("#inputCategoria").val(colunas[2].innerText);
+            $("#inputEmail").val(colunas[3].innerText);
+             $("#inputLogin").val(colunas[4].innerText);
+            $("#inputSenha").val(colunas[5].innerText);
+
+          });
+
+          exibeUsuario();
+        }
+
+      </script>
+</body>
+
+</html>

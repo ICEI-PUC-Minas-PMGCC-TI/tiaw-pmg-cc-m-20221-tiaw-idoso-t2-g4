@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Tutorial</title>
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/Template vemKfilho.css">
+  <link rel="stylesheet" href="css/cssButton.css">
+</head>
+
+<body onload="init()">
+
+  <div class="tm-page-wrap mx-auto">
+    <div class="position-relative">
+      <div class="potition-absolute tm-site-header">
+        <div class="container-fluid position-relative">
+          <div class="row">
+            <div class="col-7 col-md-4">
+              <a href="index.html" class="tm-bg-black text-center tm-logo-container">
+                <i class="fas fa-video tm-site-logo mb-3"></i>
+                <h1 class="tm-site-name">Tutoriais</h1>
+              </a>
+            </div>
+            <div class="col-5 col-md-8 ml-auto mr-0">
+              <div class="tm-site-nav">
+                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
+                  <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed" type="button"
+                    data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span>
+                      <i class="fas fa-bars tm-menu-closed-icon"></i>
+                      <i class="fas fa-times tm-menu-opened-icon"></i>
+                    </span>
+                  </button>
+                  <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                    <ul class="navbar-nav text-uppercase">
+                      <li class="nav-item active">
+                        <a class="nav-link tm-nav-link" href="video-page.html">Login <span
+                            class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="about.html">Sobre Nós</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="contact.html">Contato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tm-welcome-container tm-fixed-header tm-fixed-header-1">
+        <div class="text-center">
+          <p class="pt-5 px-3 tm-welcome-text tm-welcome-text-2 mb-1 text-white mx-auto">Cadastramento de Tutoriais</p>
+        </div>
+      </div>
+
+      <div id="tm-fixed-header-bg"></div>
+    </div>
+    <h1>Cadastro de Tutoriais</h1>
+    <div class="container">
+      <form id="form-tutorial">
+        <div class="form-group row">
+          <div class="col-sm-2">
+            <label for="inputId">Id do Tutorial</label>
+            <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
+          </div>
+          <div class="col-sm-5">
+            <label for="inputNome">Nome </label>
+            <input type="text" class="form-control" id="inputNome" required placeholder="Informe o nome do tutorial">
+          </div>
+          <div class="col-sm-5">
+            <label for="inputTitulo">Titulo</label>
+            <input type="text" class="form-control" id="inputTitulo" required placeholder="Insira o Titulo do Tutorial">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <label for="inputDescricao">Descrição do tutorial(*)</label><br></br>
+            <textarea id="inputDescricao" rows="2" cols="200" maxlength="500" spellcheck="true"
+              placeholder="Uma pré descrição do Tutorial (Um pequeno resumo)." class="form-control"></textarea>
+          </div>
+
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <label for="inputTexto">Corpo do Tutorial(*)</label><br></br>
+            <textarea id="inputTexto" rows="5" cols="200" maxlength="500" spellcheck="true"
+              placeholder="Texto onde vai compor todo o Tutorial." class="form-control"></textarea>
+          </div>
+
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4">
+            <label for="inputYoutube">Link do Youtube</label>
+            <input type="text" class="form-control" id="inputYoutube" placeholder="Apenas o codigo Ex:'clIeRHpLvd8' ">
+          </div>
+          <div class="col-sm-4">
+            <label for="inputCategoria">Categoria do Tutorial</label>
+            <select name="inputCategoria" id="inputCategoria" class="form-control">
+              <option value="" selected>Selecione Categoria do Tutorial</option>
+              <option value="Redes Sociais">Redes Sociais</option>
+              <option value="Streamings">Streamings</option>
+              <option value="Novidades">Novidades</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+          <div class="col-sm-4">
+            <label for="inputAutor">Autor do Tutorial</label>
+            <input type="text" class="form-control" id="inputAutor" required
+              placeholder="Insira o nome do Autor do Tutorial">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-6">
+            <label for="inputPublicado">Publicado</label>
+            <select name="inputPublicado" id="inputPublicado" class="form-control">
+              <option value="" selected>Selecione</option>
+              <option value="Não">Não</option>
+              <option value="Sim">Sim</option>
+            </select>
+          </div>
+          <div class="col-sm-6">
+            <label for="inputData">Data para Publicação</label>
+            <input type="date" class="form-control" id="inputData" required placeholder="">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4">
+            <small>(*) Campos obrigatórios</small>
+          </div>
+        </div>
+        <div class="container">
+          <div class="form-group row">
+            <div class="col-sm-12">
+              <input type="button"
+                class="w3-btn w3-green w3-border w3-border-black w3-text-white w3-round-large w3-large" id="btnInsert"
+                value="Inserir">
+              <input type="button"
+                class="w3-btn w3-yellow w3-border w3-border-black w3-text-black w3-round-large w3-large" id="btnUpdate"
+                value="Alterar">
+              <input type="button" class="w3-btn w3-red w3-border w3-border-black w3-text-white w3-round-large w3-large"
+                id="btnDelete" value="Excluir">
+              <input type="button" class="w3-btn w3-grey w3-round-large w3-large w3-border w3-border-black"
+                id="btnClear" value="Limpar Form">
+              <span id= "previsu"></span>
+            </div>
+          </div>
+
+      </form>
+      <div class="row">
+        <div class="col-sm-12">
+          <table id="grid-tutoriais" class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Titulo</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Corpo do Tutorial</th>
+                <th scope="col">Link do Youtube</th>
+                <th scope="col">Autor</th>
+                <th scope="col">Data de Criação</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Publicado</th>
+              </tr>
+            </thead>
+            <tbody id="table-tutoriais">
+              <tr>
+                <td scope="row">1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="row pt-5">
+      <div class="col-12">
+        <p class="text-right">Copyright 2022 VemKfilho</p>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+
+    function exibeTutoriais() {
+      // Remove todas as linhas do corpo da tabela
+      $("#table-tutoriais").html("");
+
+      // Popula a tabela com os registros do banco de dados
+      for (i = 0; i < db.data.length; i++) {
+        let tutorial = db.data[i];
+
+        $("#table-tutoriais").append(`<tr><td scope='row'>${tutorial.id}</td>                                   <td>${tutorial.nome}</td><td>${tutorial.titulo}</td><td>${tutorial.descricao}</td><td>${tutorial.texto}</td><td>${tutorial.linkYoutube}</td><td>${tutorial.autor}</td><td>${tutorial.dataCriacao}</td><td>${tutorial.categoria}</td><td>${tutorial.publicado}</td></tr>`);
+      }
+    }
+    $(document).ready(function () {
+      $('.tm-likes-box').click(function (e) {
+        e.preventDefault();
+        $(this).toggleClass('tm-liked');
+
+        if ($(this).hasClass('tm-liked')) {
+          $('#tm-likes-count').html('486 likes');
+        } else {
+          $('#tm-likes-count').html('485 likes');
+        }
+      });
+    });
+    function init() {
+     
+      $("#btnInsert").click(function () {
+        // Verfica se o formulário está preenchido corretamente
+        if (!$('#form-tutorial')[0].checkValidity()) {
+          displayMessage("Preencha o formulário corretamente.");
+          return;
+        }
+        // Obtem os valores dos campos do formulário
+        let campoNome = $("#inputNome").val();
+        let campoTitulo = $("#inputTitulo").val();
+        let campoDescricao = $("#inputDescricao").val();
+        let campoTexto = $("#inputTexto").val();
+        let campoYoutube = $("#inputYoutube").val();
+        let campoCategoria = $("#inputCategoria").val();
+        let campoAutor = $("#inputAutor").val();
+        let campoPublicado = $("#inputPublicado").val();
+        let campoData = $("#inputData").val();
+        let tutorial = {
+          nome: campoNome,
+          titulo: campoTitulo,
+          descricao: campoDescricao,
+          texto: campoTexto,
+          linkYoutube: campoYoutube,
+          autor: campoAutor,
+          dataCriacao: campoData,
+          categoria: campoCategoria,
+          publicado: campoPublicado
+        };
+        window.open("https:video-page.html?"+campoNome, "Recem Adicionada");
+
+      
+        
+        // Reexibe os tutoriais
+        exibeTutoriais();
+
+        // Limpa o formulario
+        $("#form-tutorial")[0].reset();
+        
+      });
+      // Intercepta o click do botão Alterar
+      $("#btnUpdate").click(function () {
+        // Obtem os valores dos campos do formulário
+        let campoId = $("#inputId").val();
+        if (campoId == "") {
+          displayMessage("Selecione um tutorial para ser alterado.");
+          return;
+        }
+        let campoNome = $("#inputNome").val();
+        let campoTitulo = $("#inputTitulo").val();
+        let campoDescricao = $("#inputDescricao").val();
+        let campoTexto = $("#inputTexto").val();
+        let campoYoutube = $("#inputYoutube").val();
+        let campoCategoria = $("#inputCategoria").val();
+        let campoAutor = $("#inputAutor").val();
+        let campoPublicado = $("#inputPublicado").val();
+        let campoData = $("#inputData").val();
+        let tutorial = {
+          nome: campoNome,
+          titulo: campoTitulo,
+          descricao: campoDescricao,
+          texto: campoTexto,
+          linkYoutube: campoYoutube,
+          autor: campoAutor,
+          dataCriacao: campoData,
+          categoria: campoCategoria,
+          publicado: campoPublicado
+        };
+
+        updateTutorial(parseInt(campoId), tutorial);
+
+        // Reexibe os tutoriais
+        exibeTutoriais();
+        window.open("https:video-page.html?"+campoNome, "Recem Atualizada");
+        // Limpa o formulario
+        $("#form-tutorial")[0].reset();
+      });
+      // Intercepta o click do botão Excluir
+      $("#btnDelete").click(function () {
+        let campoId = $("#inputId").val();
+        if (campoId == "") {
+          displayMessage("Selecione um tutorial a ser excluído.");
+          return;
+        }
+
+        deleteTutorial(parseInt(campoId));
+
+        // Reexibe os tutoriais
+        exibeTutoriais();
+
+        // Limpa o formulario
+        $("#form-tutorial")[0].reset();
+      });
+      $("#btnClear").click(function () {
+        $("#form-tutorial")[0].reset();
+      });
+      // Oculta a mensagem de aviso após alguns segundos
+      $('#msg').bind("DOMSubtreeModified", function () {
+        window.setTimeout(function () {
+          $(".alert").fadeTo(500, 0).slideUp(500, function () {
+            $(this).remove();
+          });
+        }, 5000);
+      });
+      // Preenche o formulário quando o usuario clicar em uma linha da tabela
+      $("#grid-tutoriais").on("click", "tr", function (e) {
+        let linhaTutorial = this;
+        colunas = linhaTutorial.querySelectorAll("td");
+        $("#inputId").val(colunas[0].innerText);
+        $("#inputNome").val(colunas[1].innerText);
+        $("#inputTitulo").val(colunas[2].innerText);
+        $("#inputDescricao").val(colunas[3].innerText);
+        $("#inputTexto").val(colunas[4].innerText);
+        $("#inputYoutube").val(colunas[5].innerText);
+        $("#inputAutor").val(colunas[6].innerText);
+        $("#inputData").val(colunas[7].innerText);
+        $("#inputCategoria").val(colunas[8].innerText);
+        $("#inputPublicado").val(colunas[9].innerText);
+
+      });
+
+      exibeTutoriais();
+
+    }
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt">
+<!-- window.location.href.split('?')[1]-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VemkFilho</title>
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/Template vemKfilho.css">
+</head>
+
+<body onload =init();>
+  <div class="tm-page-wrap mx-auto">
+    <div class="position-relative">
+      <div class="position-absolute tm-site-header">
+        <div class="container-fluid position-relative">
+          <div class="row">
+            <div class="col-7 col-md-4">
+              <a href="index.html" class="tm-bg-black text-center tm-logo-container">
+                <i class="fas fa-video tm-site-logo mb-3"></i>
+                <h1 class="tm-site-name">Tutoriais</h1>
+              </a>
+            </div>
+            <div class="col-5 col-md-8 ml-auto mr-0">
+              <div class="tm-site-nav">
+                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
+                  <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed" type="button"
+                    data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span>
+                      <i class="fas fa-bars tm-menu-closed-icon"></i>
+                      <i class="fas fa-times tm-menu-opened-icon"></i>
+                    </span>
+                  </button>
+                  <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                    <ul class="navbar-nav text-uppercase">
+                      <li class="nav-item active">
+                        <a class="nav-link tm-nav-link" href="login.html">Login <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="about.html">Sobre Nós</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link tm-nav-link" href="contact.html">Contato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tm-welcome-container text-center text-white">
+        <div class="tm-welcome-container-inner">
+          <p class="tm-welcome-text mb-1 text-white">VemkFilho disponibiliza diversos tutoriais sobre tecnologia feito
+            para idosos.</p>
+          <p class="tm-welcome-text mb-5 text-white">Se possui interesse em aprender mais sobre como utilizar as novas
+            tecnologias, nosso site apresenta diversos tutoriais sobre o tema.</p>
+          <a href="#content" class="btn tm-btn-animate tm-btn-cta tm-icon-down">
+            <span>Descubra mais</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="tm-video-container">
+        <video autoplay muted loop id="tm-video">
+
+          <source src="video/Keyboard - 1046 (1).mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+    </div>
+
+    <div class="container-fluid">
+      <div id="content" class="mx-auto tm-content-container">
+        <main>
+          <div class="row">
+            <div class="col-12">
+              <h2 class="tm-page-title mb-4">Nossos tutoriais</h2>
+              <div class="tm-categories-container mb-5">
+                <h3 class="tm-text-primary tm-categories-text">Categorias:</h3>
+                <ul class="nav tm-category-list">
+                  <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link active">Todos</a>
+                  </li>
+                  <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Redes sociais</a>
+                  </li>
+                  <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Streamings</a>
+                  </li>
+                  <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Novidades</a></li>
+                  <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Outros</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row tm-catalog-item-list">
+            <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div class="position-relative tm-thumbnail-container" id="tutorial0">
+              </div>
+              <div class="p-4 tm-bg-gray tm-catalog-item-description">
+              <span id="tutorialDescricao0"></span>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div class="position-relative tm-thumbnail-container">
+
+                <a href="video-page-alter.html?acessando-youtube" class="position-absolute tm-img-overlay">
+                  <i class="fas fa-play tm-overlay-icon"></i>
+                </a>
+              </div>
+              <div class="position-relative tm-thumbnail-container" id="tutorial1">
+              </div>
+              <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                
+               <span id="tutorialDescricao1"></span>
+                
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div class="position-relative tm-thumbnail-container">
+
+                <a href="video-page.html?acessando-youtube" class="position-absolute tm-img-overlay">
+                  <i class="fas fa-play tm-overlay-icon"></i>
+                </a>
+              </div>
+              <div class="position-relative tm-thumbnail-container" id="tutorial2">
+              </div>
+              <div class="p-4 tm-bg-gray tm-catalog-item-description">
+               
+                <span id="tutorialDescricao2"></span>
+               
+              
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div class="position-relative tm-thumbnail-container">
+
+                <a href="video-page.html" class="position-absolute tm-img-overlay">
+                  <i class="fas fa-play tm-overlay-icon"></i>
+                </a>
+              </div>
+              <div class="position-relative tm-thumbnail-container" id="tutorial3">
+              </div>
+              <div class="p-4 tm-bg-gray tm-catalog-item-description">
+               
+                <span id="tutorialDescricao3"></span>
+               
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div class="position-relative tm-thumbnail-container">
+
+                <a href="video-page.html" class="position-absolute tm-img-overlay">
+                  <i class="fas fa-play tm-overlay-icon"></i>
+                </a>
+              </div>
+              <div class="position-relative tm-thumbnail-container" id="tutorial4">
+              </div>
+              <div class="p-4 tm-bg-gray tm-catalog-item-description">
+               
+                <span id="tutorialDescricao4"></span>
+               
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div class="position-relative tm-thumbnail-container">
+
+                <a href="video-page.html" class="position-absolute tm-img-overlay">
+                  <i class="fas fa-play tm-overlay-icon"></i>
+                </a>
+              </div>
+              <div class="position-relative tm-thumbnail-container" id="tutorial5">
+              </div>
+              <div class="p-4 tm-bg-gray tm-catalog-item-description">
+               
+                <span id="tutorialDescricao5"></span>
+               
+              </div>
+            </div>
+          </div></div>
+        </main>
+
+
+        <div class="row mt-5 pt-3">
+          <div class="col-xl-6 col-lg-12 mb-4">
+            <div class="tm-bg-gray p-5 h-100">
+              
+              <h3 class="tm-text-primary mb-3">Você gostaria de receber as nossas novidades?</h3>
+              <p class="mb-5">Por favor se inscreva para receber notificações de novos vídeos!</p>
+              <form action="" method="GET" class="tm-subscribe-form">
+                <input type="text" name="email" placeholder="Seu Email..." required>
+                <button type="submit" class="btn rounded-0 btn-primary tm-btn-small">Inscreva-se</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
+            <div class="p-5 tm-bg-gray">
+              <h3 class="tm-text-primary mb-4">Links interessantes</h3>
+              <ul class="list-unstyled tm-footer-links">
+                <li><a href="https://support.google.com/photos/answer/6193313?hl=pt-BR&co=GENIE.Platform%3DAndroid">Como fazer backups de fotos</a></li>
+                <li><a href="https://pt.linkedin.com/pulse/import%C3%A2ncia-do-celular-em-nossas-vidas-daniel-castro">A importância dos celulares</a></li>
+                <li><a href="https://gabrielabrasil.com/como-o-smartphone-pode-ajudar-voce-melhorar-seus-habitos/">Como facilitar seu cotidiano com os smartphones</a></li>
+
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
+            <div class="p-5 tm-bg-gray h-100">
+              <h3 class="tm-text-primary mb-4">Nossas páginas</h3>
+              <ul class="list-unstyled tm-footer-links">
+                <li><a href="index.html">Nossos vídeos</a></li>
+                <li><a href="#">Termos de Licença</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="#">Políticas de Privacidade</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+   <script src="js/jquery-3.4.1.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+   <script>
+     function init() {
+      let nomeTutorial = window.location.href.split('?')[1];
+
+
+      for (let index = 0; index < 6 ; index++) {
+        const tutorial = db.data[index];
+        document.getElementById("tutorial" + index.toString()).innerHTML = "<img src='https://img.youtube.com/vi/" + tutorial.linkYoutube + "/maxresdefault.jpg' alt='Image' class='img-fluid tm-catalog-item-img'><a href='video-page.html?" + tutorial.nome + "' class='position-absolute tm-img-overlay'><i class='fas fa-play tm-overlay-icon'></i></a>";
+        document.getElementById("tutorialDescricao" + index.toString()).innerHTML ="                <h3 class='tm-text-primary mb-3 tm-catalog-item-title'>"+tutorial.titulo+"</h3><p class='tm-catalog-item-text'>"+tutorial.descricao+"</p>"
+;
+
+	        }
+    }
+
+    function setVideoSize() {
+      const vidWidth = 1920;
+      const vidHeight = 1080;
+      let windowWidth = window.innerWidth;
+      let newVidWidth = windowWidth;
+      let newVidHeight = windowWidth * vidHeight / vidWidth;
+      let marginLeft = 0;
+      let marginTop = 0;
+
+      if (newVidHeight < 500) {
+        newVidHeight = 500;
+        newVidWidth = newVidHeight * vidWidth / vidHeight;
+      }
+
+      if (newVidWidth > windowWidth) {
+        marginLeft = -((newVidWidth - windowWidth) / 2);
+      }
+
+      if (newVidHeight > 720) {
+        marginTop = -((newVidHeight - $('#tm-video-container').height()) / 2);
+      }
+
+      const tmVideo = $('#tm-video');
+
+      tmVideo.css('width', newVidWidth);
+      tmVideo.css('height', newVidHeight);
+      tmVideo.css('margin-left', marginLeft);
+      tmVideo.css('margin-top', marginTop);
+    }
+
+    $(document).ready(function () {
+      /************** Video background *********/
+
+      setVideoSize();
+
+      // Set video background size based on window size
+      let timeout;
+      window.onresize = function () {
+        clearTimeout(timeout);
+        timeout = setTimeout(setVideoSize, 100);
+      };
+
+      // Play/Pause button for video background      
+      const btn = $("#tm-video-control-button");
+
+      btn.on("click", function (e) {
+        const video = document.getElementById("tm-video");
+        $(this).removeClass();
+
+        if (video.paused) {
+          video.play();
+          $(this).addClass("fas fa-pause");
+        } else {
+          video.pause();
+          $(this).addClass("fas fa-play");
+        }
+      });
+
+    })
+
+  </script>
+</body>
+
+</html>

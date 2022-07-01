@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">    
+</head>
+
+<body onload="ListaUsuarios()">
+    <h1>Listagem de Usuários</h1>
+
+    <div class="container">
+        <div class="row">
+            <div id="msg" class="col-sm-10 offset-sm-1 ">
+                <!--<div class="alert alert-warning">Contato não encontrado.</div>-->
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="msg" class="col-sm-2 offset-sm-10 ">
+                <a href="index.html"><input type="button" class="btn btn-warning" id="btnClear" value="Cadastrar"></a>
+            </div>
+        </div>        
+        
+        <form id="form-usuario">            
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <select name="filtro_categoria" id="filtro_categoria" onchange='ListaUsuarios()' class="form-control">
+                        <option value="">Selecione Categoria</option>
+                        <option value="Usuário">Usuário</option>
+                        <option value="Moderador">Moderador</option>
+                        <option value="Administrador">Administrador</option>
+                    </select>                    
+                </div>
+
+              <div class="col-sm-8">
+                    <input type="text" class="form-control" id="filtro_nome" onkeyup="ListaUsuarios()" required placeholder="Pesquisar pelo nome de Usuário">
+                </div>
+                </div>
+            </div>
+        </form>
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="grid-usuarios" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Categoria do Usuário</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">Senha</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-usuarios">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // função para listar na tabela os usuarios que estão associados aos filtros 
+        function ListaUsuarios() {
+            
+            // Obtem os dados informados pelo usuário nos filtros
+            let fc = document.getElementById('filtro_categoria').value;
+            let fn = document.getElementById('filtro_nome').value.toLowerCase();
+
+            // limpa a lista de usuarios apresentados
+            $("#table-usuarios").empty();
+
+            // Popula a tabela com os registros do banco de dados
+            for (let index = 0; index < db.data.length; index++) {
+                const usuario = db.data[index];
+
+                // Verifica se os dados do usuario batem com os filtros
+                if (((usuario.categoria == fc) || (fc == '')) &&
+                    ((usuario.nome.toLowerCase().includes(fn) ) || (fn == ''))) {
+                    
+                    // Inclui o usuario na tabela    
+                    $("#table-usuarios").append(`<tr>
+                                                <td scope="row">${usuario.id}</td>
+                                                <td>${usuario.nome}</td>
+                                                <td>${usuario.categoria}</td>
+                                                <td>${usuario.email}</td>
+                                                <td>${usuario.senha}</td> 
+                                                </tr>`);
+                }
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
